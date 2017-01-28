@@ -128,7 +128,7 @@
                                 </constraints>
                                 <state key="normal" title="Choose your state"/>
                             </button>
-                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-sh-Qin">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-sh-Qin">
                                 <rect key="frame" x="82" y="470" width="211" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="141" id="2zq-wy-EjN"/>
