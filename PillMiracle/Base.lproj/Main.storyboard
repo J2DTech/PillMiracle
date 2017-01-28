@@ -127,6 +127,9 @@
                                     <constraint firstAttribute="height" constant="12" id="kEj-Jc-9z0"/>
                                 </constraints>
                                 <state key="normal" title="Choose your state"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZc-F7-KPW"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-sh-Qin">
                                 <rect key="frame" x="82" y="470" width="211" height="141"/>
@@ -176,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="statePicker" destination="uBf-sh-Qin" id="T3e-eB-OK0"/>
+                        <outlet property="statePickerBtn" destination="mMR-x7-ddm" id="jFu-mU-Fp8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
