@@ -19,6 +19,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var countryText: UITextField!
     @IBOutlet weak var zipLabel: UILabel!
     @IBOutlet weak var zipText: UITextField!
+    @IBOutlet weak var success: UIImageView!
+    @IBOutlet weak var buyNow: UIButton!
+    @IBOutlet weak var pill: UIImageView!
+    @IBOutlet weak var pillLabel: UILabel!
+    @IBOutlet weak var pillPrice: UILabel!
+    @IBOutlet weak var divider: UIView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var street: UILabel!
+    @IBOutlet weak var stretText: UITextField!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var cityText: UITextField!
+    @IBOutlet weak var state: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,5 +78,28 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         zipText.isHidden = false
     }
 
+    @IBAction func buyBtnpressed(_ sender: Any) {
+        buyNow.isHidden = true
+        
+        countryLabel.isHidden = true
+        countryText.isHidden = true
+        zipLabel.isHidden = true
+        zipText.isHidden = true
+        pill.isHidden = true
+        pillLabel.isHidden = true
+        pillPrice.isHidden = true
+        divider.isHidden = true
+        name.isHidden = true
+        nameText.isHidden = true
+        street.isHidden = true
+        stretText.isHidden = true
+        city.isHidden = true
+        cityText.isHidden = true
+        state.isHidden = true
+        statePickerBtn.isHidden = true
+        
+        success.isHidden = false
+        
+    }
 }
 

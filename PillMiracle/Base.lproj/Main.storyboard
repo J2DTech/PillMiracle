@@ -177,7 +177,13 @@
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpQ-wZ-2aM">
                                 <rect key="frame" x="109" y="586" width="195" height="150"/>
                                 <state key="normal" title="Button" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyBtnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6M-A2-1UK"/>
+                                </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="sVo-uN-evA">
+                                <rect key="frame" x="87" y="272" width="240" height="192"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -216,6 +222,7 @@
                             <constraint firstItem="hMD-RB-a4m" firstAttribute="top" secondItem="HlX-C7-UGV" secondAttribute="bottom" constant="8" id="gf2-z8-MLX"/>
                             <constraint firstItem="Io4-uA-X0r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="gfN-vb-REk"/>
                             <constraint firstItem="xYc-sn-JOS" firstAttribute="leading" secondItem="gmG-J5-Wz5" secondAttribute="leading" id="giK-AF-xiy"/>
+                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYn-bq-ga0"/>
                             <constraint firstItem="w5e-0s-JGX" firstAttribute="trailing" secondItem="NWD-Fu-VFo" secondAttribute="trailing" id="jeh-RN-mCh"/>
                             <constraint firstItem="FG0-W1-etd" firstAttribute="top" secondItem="BLy-ie-IaL" secondAttribute="bottom" constant="8" id="m28-I8-c1d"/>
                             <constraint firstItem="ysn-li-Y7L" firstAttribute="trailing" secondItem="w5e-0s-JGX" secondAttribute="trailing" id="odr-ll-Udg"/>
@@ -229,26 +236,41 @@
                             <constraint firstItem="mMR-x7-ddm" firstAttribute="top" secondItem="Js1-gi-Pra" secondAttribute="bottom" constant="8" id="xPY-gx-gz9"/>
                             <constraint firstItem="w5e-0s-JGX" firstAttribute="leading" secondItem="NWD-Fu-VFo" secondAttribute="leading" id="xYj-YA-u2q"/>
                             <constraint firstItem="ZvN-7c-fI1" firstAttribute="top" secondItem="FG0-W1-etd" secondAttribute="bottom" constant="8" id="yce-YY-s8X"/>
+                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ydx-nj-oIB"/>
                             <constraint firstItem="ZX7-Yy-f0x" firstAttribute="top" secondItem="mMR-x7-ddm" secondAttribute="bottom" constant="15" id="yeK-yc-Kz7"/>
                             <constraint firstItem="NWD-Fu-VFo" firstAttribute="top" secondItem="hMD-RB-a4m" secondAttribute="bottom" constant="8" id="z6G-Ch-1Pg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyNow" destination="NpQ-wZ-2aM" id="Gcs-XQ-Isg"/>
+                        <outlet property="city" destination="gmG-J5-Wz5" id="bdr-10-3z7"/>
+                        <outlet property="cityText" destination="xYc-sn-JOS" id="feb-Bz-Rak"/>
                         <outlet property="countryLabel" destination="ZX7-Yy-f0x" id="LDX-fg-Y7n"/>
                         <outlet property="countryText" destination="BLy-ie-IaL" id="Mt2-39-D09"/>
+                        <outlet property="divider" destination="hMD-RB-a4m" id="u4Q-Nq-B4n"/>
+                        <outlet property="name" destination="NWD-Fu-VFo" id="sRr-YF-oPe"/>
+                        <outlet property="nameText" destination="w5e-0s-JGX" id="mdK-hC-QVk"/>
+                        <outlet property="pill" destination="Io4-uA-X0r" id="Cz6-Vk-Y9t"/>
+                        <outlet property="pillLabel" destination="fh1-oc-TtG" id="L8Y-LI-j42"/>
+                        <outlet property="pillPrice" destination="HlX-C7-UGV" id="Nqi-yz-J2r"/>
+                        <outlet property="state" destination="Js1-gi-Pra" id="jNe-4R-YE5"/>
                         <outlet property="statePicker" destination="uBf-sh-Qin" id="T3e-eB-OK0"/>
                         <outlet property="statePickerBtn" destination="mMR-x7-ddm" id="jFu-mU-Fp8"/>
+                        <outlet property="street" destination="ysn-li-Y7L" id="1g5-hM-SZ9"/>
+                        <outlet property="stretText" destination="pjh-oj-z0a" id="fSx-QL-Hbe"/>
+                        <outlet property="success" destination="sVo-uN-evA" id="lMu-5p-F8V"/>
                         <outlet property="zipLabel" destination="FG0-W1-etd" id="omt-ht-v8d"/>
                         <outlet property="zipText" destination="ZvN-7c-fI1" id="PsN-DJ-cvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.399999999999999" y="36.431784107946029"/>
+            <point key="canvasLocation" x="33.333333333333336" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
