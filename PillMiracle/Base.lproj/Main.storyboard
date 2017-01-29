@@ -179,11 +179,11 @@
                                 <state key="normal" title="Button" image="buyNowBtn"/>
                                 <connections>
                                     <action selector="buyBtnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6M-A2-1UK"/>
+                                    <segue destination="We4-ci-S6C" kind="popoverPresentation" popoverAnchorView="NpQ-wZ-2aM" id="NZc-ra-CC9">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="sVo-uN-evA">
-                                <rect key="frame" x="87" y="272" width="240" height="192"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -222,7 +222,6 @@
                             <constraint firstItem="hMD-RB-a4m" firstAttribute="top" secondItem="HlX-C7-UGV" secondAttribute="bottom" constant="8" id="gf2-z8-MLX"/>
                             <constraint firstItem="Io4-uA-X0r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="gfN-vb-REk"/>
                             <constraint firstItem="xYc-sn-JOS" firstAttribute="leading" secondItem="gmG-J5-Wz5" secondAttribute="leading" id="giK-AF-xiy"/>
-                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYn-bq-ga0"/>
                             <constraint firstItem="w5e-0s-JGX" firstAttribute="trailing" secondItem="NWD-Fu-VFo" secondAttribute="trailing" id="jeh-RN-mCh"/>
                             <constraint firstItem="FG0-W1-etd" firstAttribute="top" secondItem="BLy-ie-IaL" secondAttribute="bottom" constant="8" id="m28-I8-c1d"/>
                             <constraint firstItem="ysn-li-Y7L" firstAttribute="trailing" secondItem="w5e-0s-JGX" secondAttribute="trailing" id="odr-ll-Udg"/>
@@ -236,7 +235,6 @@
                             <constraint firstItem="mMR-x7-ddm" firstAttribute="top" secondItem="Js1-gi-Pra" secondAttribute="bottom" constant="8" id="xPY-gx-gz9"/>
                             <constraint firstItem="w5e-0s-JGX" firstAttribute="leading" secondItem="NWD-Fu-VFo" secondAttribute="leading" id="xYj-YA-u2q"/>
                             <constraint firstItem="ZvN-7c-fI1" firstAttribute="top" secondItem="FG0-W1-etd" secondAttribute="bottom" constant="8" id="yce-YY-s8X"/>
-                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ydx-nj-oIB"/>
                             <constraint firstItem="ZX7-Yy-f0x" firstAttribute="top" secondItem="mMR-x7-ddm" secondAttribute="bottom" constant="15" id="yeK-yc-Kz7"/>
                             <constraint firstItem="NWD-Fu-VFo" firstAttribute="top" secondItem="hMD-RB-a4m" secondAttribute="bottom" constant="8" id="z6G-Ch-1Pg"/>
                         </constraints>
@@ -265,7 +263,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.333333333333336" y="35.869565217391305"/>
+            <point key="canvasLocation" x="-448" y="45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fEf-5g-psF">
+            <objects>
+                <viewController id="We4-ci-S6C" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="juu-ze-ohl"/>
+                        <viewControllerLayoutGuide type="bottom" id="gGH-o5-bTn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xTD-eq-59V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="sVo-uN-evA">
+                                <rect key="frame" x="117" y="278" width="180" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerY" secondItem="xTD-eq-59V" secondAttribute="centerY" id="FjV-Yi-jja"/>
+                            <constraint firstItem="sVo-uN-evA" firstAttribute="centerX" secondItem="xTD-eq-59V" secondAttribute="centerX" id="ZjX-eL-TsD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUx-4b-xRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="45"/>
         </scene>
     </scenes>
     <resources>

@@ -79,26 +79,26 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     @IBAction func buyBtnpressed(_ sender: Any) {
-        buyNow.isHidden = true
-        
-        countryLabel.isHidden = true
-        countryText.isHidden = true
-        zipLabel.isHidden = true
-        zipText.isHidden = true
-        pill.isHidden = true
-        pillLabel.isHidden = true
-        pillPrice.isHidden = true
-        divider.isHidden = true
-        name.isHidden = true
-        nameText.isHidden = true
-        street.isHidden = true
-        stretText.isHidden = true
-        city.isHidden = true
-        cityText.isHidden = true
-        state.isHidden = true
-        statePickerBtn.isHidden = true
-        
-        success.isHidden = false
+//        buyNow.isHidden = true
+//        
+//        countryLabel.isHidden = true
+//        countryText.isHidden = true
+//        zipLabel.isHidden = true
+//        zipText.isHidden = true
+//        pill.isHidden = true
+//        pillLabel.isHidden = true
+//        pillPrice.isHidden = true
+//        divider.isHidden = true
+//        name.isHidden = true
+//        nameText.isHidden = true
+//        street.isHidden = true
+//        stretText.isHidden = true
+//        city.isHidden = true
+//        cityText.isHidden = true
+//        state.isHidden = true
+//        statePickerBtn.isHidden = true
+//        
+//        success.isHidden = false
         
     }
 }
