@@ -15,6 +15,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     var states = ["Alabama", "Alaska", "California","Nevada", "Florida","Washingtong D.C."]
     
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var countryText: UITextField!
+    @IBOutlet weak var zipLabel: UILabel!
+    @IBOutlet weak var zipText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +36,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func stateBtnPressed(_ sender: Any) {
         statePicker.isHidden = false
+        countryLabel.isHidden = true
+        countryText.isHidden = true
+        zipLabel.isHidden = true
+        zipText.isHidden = true
         
     }
     
@@ -49,6 +58,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
         statePicker.isHidden = true
+        
+        countryLabel.isHidden = false
+        countryText.isHidden = false
+        zipLabel.isHidden = false
+        zipText.isHidden = false
     }
 
 }
