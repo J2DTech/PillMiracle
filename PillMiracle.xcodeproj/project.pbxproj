@@ -187,6 +187,9 @@
 		56E7E1B91E3C2BF000BBC5D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joel Diaz";
@@ -194,17 +197,20 @@
 					56E7E1C01E3C2BF000BBC5D8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 35X64PY482;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					56E7E1D41E3C2BF100BBC5D8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 35X64PY482;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 56E7E1C01E3C2BF000BBC5D8;
 					};
 					56E7E1DF1E3C2BF100BBC5D8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 35X64PY482;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 56E7E1C01E3C2BF000BBC5D8;
 					};
@@ -421,6 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = J2D.PillMiracle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,9 +438,11 @@
 				DEVELOPMENT_TEAM = 35X64PY482;
 				INFOPLIST_FILE = PillMiracle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = J2D.PillMiracle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -514,6 +523,7 @@
 				56E7E1EB1E3C2BF100BBC5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56E7E1EC1E3C2BF100BBC5D8 /* Build configuration list for PBXNativeTarget "PillMiracleTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +532,7 @@
 				56E7E1EE1E3C2BF100BBC5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56E7E1EF1E3C2BF100BBC5D8 /* Build configuration list for PBXNativeTarget "PillMiracleUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +541,7 @@
 				56E7E1F11E3C2BF100BBC5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
